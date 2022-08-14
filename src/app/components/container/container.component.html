@@ -1,0 +1,11 @@
+<div class="generalContainer">
+  <!-- Form section -->
+  <app-student-creator></app-student-creator>
+
+  <!-- Student section-->
+  <div class="studentSection">
+    <div *ngFor="let student of students | async">
+      <app-student-card [student]="student"></app-student-card>
+    </div>
+  </div>
+</div>

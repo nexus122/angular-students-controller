@@ -1,0 +1,20 @@
+<mat-card class="card">
+  <mat-card-title>Crear nuevo Estudiante</mat-card-title>
+  <mat-card-content>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput placeholder="Ex. Pepa" value="" />
+    </mat-form-field>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Surname</mat-label>
+      <input matInput placeholder="Ex. Pig" value="" />
+    </mat-form-field>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary">Create new student</button>
+  </mat-card-actions>
+  <!-- Barra de progreso molona! -->
+  <mat-card-footer *ngIf="false">
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  </mat-card-footer>
+</mat-card>
